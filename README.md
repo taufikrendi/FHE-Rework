@@ -1,9 +1,4 @@
-
 # FHE - Rework Paper
-
-To run this project
-
-
 
 ## Authors
 
@@ -21,6 +16,10 @@ OpenFHE Version: 1.5.1
 Linier Regression Self Build
 
 [Hosing Data From kaggle](https://www.kaggle.com/datasets/camnugent/california-housing-prices/data)
+
+# Installation
+To run this project you must Install OpenFHE with C++, 
+if difficult you can follow the documentation of OpenFHE
 
 ## Deployment
 
@@ -42,6 +41,10 @@ if cannot run please re-create the build folder
   cmake --build . or make
   ./ownscript
 ```
+
+## Results of Analysis 
+
+check on build folder, you can find the image
 
 
 
