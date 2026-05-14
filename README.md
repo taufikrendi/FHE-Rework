@@ -5,6 +5,21 @@ To run this project
 
 
 
+## Authors
+
+- [@taufikrendi](https://www.github.com/taufikrendi)
+
+
+## Documentation
+
+cmake (VERSION 3.16.3)
+
+OpenFHE Version: 1.5.1
+
+Linier Regression Self Build
+
+[Hosing Data From kaggle](https://www.kaggle.com/datasets/camnugent/california-housing-prices/data)
+
 ## Deployment
 
 To deploy this project run
@@ -26,4 +41,9 @@ if cannot run please re-create the build folder
   ./ownscript
 ```
 
+
+
+## Acknowledgements
+
+ - [Paper from Rian Raja Gede & Pro. Yan Solihin](https://arxiv.org/pdf/2509.20686)
 
