@@ -1,0 +1,3 @@
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot-subbuild/CMakeFiles/sciplot-populate.dir
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot-subbuild/CMakeFiles/edit_cache.dir
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot-subbuild/CMakeFiles/rebuild_cache.dir

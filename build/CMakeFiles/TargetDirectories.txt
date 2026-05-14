@@ -1,0 +1,3 @@
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles/ownscript.dir
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles/edit_cache.dir
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles/rebuild_cache.dir
