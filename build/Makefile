@@ -129,101 +129,77 @@ ownscript/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/build
 .PHONY : ownscript/fast
 
-BFVBenchmarker.o: BFVBenchmarker.cpp.o
-.PHONY : BFVBenchmarker.o
+benchmarker-testing/BFVBenchmarker.o: benchmarker-testing/BFVBenchmarker.cpp.o
+.PHONY : benchmarker-testing/BFVBenchmarker.o
 
 # target to build an object file
-BFVBenchmarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o
-.PHONY : BFVBenchmarker.cpp.o
+benchmarker-testing/BFVBenchmarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o
+.PHONY : benchmarker-testing/BFVBenchmarker.cpp.o
 
-BFVBenchmarker.i: BFVBenchmarker.cpp.i
-.PHONY : BFVBenchmarker.i
+benchmarker-testing/BFVBenchmarker.i: benchmarker-testing/BFVBenchmarker.cpp.i
+.PHONY : benchmarker-testing/BFVBenchmarker.i
 
 # target to preprocess a source file
-BFVBenchmarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.i
-.PHONY : BFVBenchmarker.cpp.i
+benchmarker-testing/BFVBenchmarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.i
+.PHONY : benchmarker-testing/BFVBenchmarker.cpp.i
 
-BFVBenchmarker.s: BFVBenchmarker.cpp.s
-.PHONY : BFVBenchmarker.s
+benchmarker-testing/BFVBenchmarker.s: benchmarker-testing/BFVBenchmarker.cpp.s
+.PHONY : benchmarker-testing/BFVBenchmarker.s
 
 # target to generate assembly for a file
-BFVBenchmarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.s
-.PHONY : BFVBenchmarker.cpp.s
+benchmarker-testing/BFVBenchmarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.s
+.PHONY : benchmarker-testing/BFVBenchmarker.cpp.s
 
-CKKSBenchmarker.o: CKKSBenchmarker.cpp.o
-.PHONY : CKKSBenchmarker.o
+benchmarker-testing/CKKSBenchmarker.o: benchmarker-testing/CKKSBenchmarker.cpp.o
+.PHONY : benchmarker-testing/CKKSBenchmarker.o
 
 # target to build an object file
-CKKSBenchmarker.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o
-.PHONY : CKKSBenchmarker.cpp.o
+benchmarker-testing/CKKSBenchmarker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o
+.PHONY : benchmarker-testing/CKKSBenchmarker.cpp.o
 
-CKKSBenchmarker.i: CKKSBenchmarker.cpp.i
-.PHONY : CKKSBenchmarker.i
+benchmarker-testing/CKKSBenchmarker.i: benchmarker-testing/CKKSBenchmarker.cpp.i
+.PHONY : benchmarker-testing/CKKSBenchmarker.i
 
 # target to preprocess a source file
-CKKSBenchmarker.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.i
-.PHONY : CKKSBenchmarker.cpp.i
+benchmarker-testing/CKKSBenchmarker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.i
+.PHONY : benchmarker-testing/CKKSBenchmarker.cpp.i
 
-CKKSBenchmarker.s: CKKSBenchmarker.cpp.s
-.PHONY : CKKSBenchmarker.s
+benchmarker-testing/CKKSBenchmarker.s: benchmarker-testing/CKKSBenchmarker.cpp.s
+.PHONY : benchmarker-testing/CKKSBenchmarker.s
 
 # target to generate assembly for a file
-CKKSBenchmarker.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.s
-.PHONY : CKKSBenchmarker.cpp.s
+benchmarker-testing/CKKSBenchmarker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.s
+.PHONY : benchmarker-testing/CKKSBenchmarker.cpp.s
 
-FHEReliabilitySim.o: FHEReliabilitySim.cpp.o
-.PHONY : FHEReliabilitySim.o
+lib/Utils.o: lib/Utils.cpp.o
+.PHONY : lib/Utils.o
 
 # target to build an object file
-FHEReliabilitySim.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o
-.PHONY : FHEReliabilitySim.cpp.o
+lib/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/lib/Utils.cpp.o
+.PHONY : lib/Utils.cpp.o
 
-FHEReliabilitySim.i: FHEReliabilitySim.cpp.i
-.PHONY : FHEReliabilitySim.i
-
-# target to preprocess a source file
-FHEReliabilitySim.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.i
-.PHONY : FHEReliabilitySim.cpp.i
-
-FHEReliabilitySim.s: FHEReliabilitySim.cpp.s
-.PHONY : FHEReliabilitySim.s
-
-# target to generate assembly for a file
-FHEReliabilitySim.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.s
-.PHONY : FHEReliabilitySim.cpp.s
-
-Utils.o: Utils.cpp.o
-.PHONY : Utils.o
-
-# target to build an object file
-Utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/Utils.cpp.o
-.PHONY : Utils.cpp.o
-
-Utils.i: Utils.cpp.i
-.PHONY : Utils.i
+lib/Utils.i: lib/Utils.cpp.i
+.PHONY : lib/Utils.i
 
 # target to preprocess a source file
-Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/Utils.cpp.i
-.PHONY : Utils.cpp.i
+lib/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/lib/Utils.cpp.i
+.PHONY : lib/Utils.cpp.i
 
-Utils.s: Utils.cpp.s
-.PHONY : Utils.s
+lib/Utils.s: lib/Utils.cpp.s
+.PHONY : lib/Utils.s
 
 # target to generate assembly for a file
-Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/Utils.cpp.s
-.PHONY : Utils.cpp.s
+lib/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/lib/Utils.cpp.s
+.PHONY : lib/Utils.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -249,6 +225,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rework-fhe-reliability/FHEReliability.o: rework-fhe-reliability/FHEReliability.cpp.o
+.PHONY : rework-fhe-reliability/FHEReliability.o
+
+# target to build an object file
+rework-fhe-reliability/FHEReliability.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o
+.PHONY : rework-fhe-reliability/FHEReliability.cpp.o
+
+rework-fhe-reliability/FHEReliability.i: rework-fhe-reliability/FHEReliability.cpp.i
+.PHONY : rework-fhe-reliability/FHEReliability.i
+
+# target to preprocess a source file
+rework-fhe-reliability/FHEReliability.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.i
+.PHONY : rework-fhe-reliability/FHEReliability.cpp.i
+
+rework-fhe-reliability/FHEReliability.s: rework-fhe-reliability/FHEReliability.cpp.s
+.PHONY : rework-fhe-reliability/FHEReliability.s
+
+# target to generate assembly for a file
+rework-fhe-reliability/FHEReliability.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.s
+.PHONY : rework-fhe-reliability/FHEReliability.cpp.s
+
+rework-fhe-reliability/FT_FHEReliability.o: rework-fhe-reliability/FT_FHEReliability.cpp.o
+.PHONY : rework-fhe-reliability/FT_FHEReliability.o
+
+# target to build an object file
+rework-fhe-reliability/FT_FHEReliability.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o
+.PHONY : rework-fhe-reliability/FT_FHEReliability.cpp.o
+
+rework-fhe-reliability/FT_FHEReliability.i: rework-fhe-reliability/FT_FHEReliability.cpp.i
+.PHONY : rework-fhe-reliability/FT_FHEReliability.i
+
+# target to preprocess a source file
+rework-fhe-reliability/FT_FHEReliability.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.i
+.PHONY : rework-fhe-reliability/FT_FHEReliability.cpp.i
+
+rework-fhe-reliability/FT_FHEReliability.s: rework-fhe-reliability/FT_FHEReliability.cpp.s
+.PHONY : rework-fhe-reliability/FT_FHEReliability.s
+
+# target to generate assembly for a file
+rework-fhe-reliability/FT_FHEReliability.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.s
+.PHONY : rework-fhe-reliability/FT_FHEReliability.cpp.s
+
+rework-fhe-reliability/LinearRegressionModel.o: rework-fhe-reliability/LinearRegressionModel.cpp.o
+.PHONY : rework-fhe-reliability/LinearRegressionModel.o
+
+# target to build an object file
+rework-fhe-reliability/LinearRegressionModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o
+.PHONY : rework-fhe-reliability/LinearRegressionModel.cpp.o
+
+rework-fhe-reliability/LinearRegressionModel.i: rework-fhe-reliability/LinearRegressionModel.cpp.i
+.PHONY : rework-fhe-reliability/LinearRegressionModel.i
+
+# target to preprocess a source file
+rework-fhe-reliability/LinearRegressionModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.i
+.PHONY : rework-fhe-reliability/LinearRegressionModel.cpp.i
+
+rework-fhe-reliability/LinearRegressionModel.s: rework-fhe-reliability/LinearRegressionModel.cpp.s
+.PHONY : rework-fhe-reliability/LinearRegressionModel.s
+
+# target to generate assembly for a file
+rework-fhe-reliability/LinearRegressionModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.s
+.PHONY : rework-fhe-reliability/LinearRegressionModel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,21 +306,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ownscript"
-	@echo "... BFVBenchmarker.o"
-	@echo "... BFVBenchmarker.i"
-	@echo "... BFVBenchmarker.s"
-	@echo "... CKKSBenchmarker.o"
-	@echo "... CKKSBenchmarker.i"
-	@echo "... CKKSBenchmarker.s"
-	@echo "... FHEReliabilitySim.o"
-	@echo "... FHEReliabilitySim.i"
-	@echo "... FHEReliabilitySim.s"
-	@echo "... Utils.o"
-	@echo "... Utils.i"
-	@echo "... Utils.s"
+	@echo "... benchmarker-testing/BFVBenchmarker.o"
+	@echo "... benchmarker-testing/BFVBenchmarker.i"
+	@echo "... benchmarker-testing/BFVBenchmarker.s"
+	@echo "... benchmarker-testing/CKKSBenchmarker.o"
+	@echo "... benchmarker-testing/CKKSBenchmarker.i"
+	@echo "... benchmarker-testing/CKKSBenchmarker.s"
+	@echo "... lib/Utils.o"
+	@echo "... lib/Utils.i"
+	@echo "... lib/Utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rework-fhe-reliability/FHEReliability.o"
+	@echo "... rework-fhe-reliability/FHEReliability.i"
+	@echo "... rework-fhe-reliability/FHEReliability.s"
+	@echo "... rework-fhe-reliability/FT_FHEReliability.o"
+	@echo "... rework-fhe-reliability/FT_FHEReliability.i"
+	@echo "... rework-fhe-reliability/FT_FHEReliability.s"
+	@echo "... rework-fhe-reliability/LinearRegressionModel.o"
+	@echo "... rework-fhe-reliability/LinearRegressionModel.i"
+	@echo "... rework-fhe-reliability/LinearRegressionModel.s"
 .PHONY : help
 
 

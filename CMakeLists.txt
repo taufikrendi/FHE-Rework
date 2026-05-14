@@ -18,6 +18,7 @@ cmake_minimum_required(VERSION 3.16.3)
 
 project(ownscript)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_OSX_DEPLOYMENT_TARGET "14.0")
 option(BUILD_STATIC "Set to ON to include static versions of the library" OFF)
 
 find_package(OpenFHE CONFIG REQUIRED)
@@ -70,9 +71,18 @@ endif()
 include_directories(${sciplot_content_SOURCE_DIR})
 
 add_executable(ownscript main.cpp
-        BFVBenchmarker.cpp
-        CKKSBenchmarker.cpp
-        Utils.cpp
-        FHEReliabilitySim.cpp
+        ### Sciplot Lib Generator
+        lib/Utils.cpp
+
+        ### Testing
+        benchmarker-testing/BFVBenchmarker.cpp
+        benchmarker-testing/CKKSBenchmarker.cpp
+
+        ### rework FHE
+        rework-fhe-reliability/FHEReliability.cpp
+        rework-fhe-reliability/FHEReliability.h
+        rework-fhe-reliability/FT_FHEReliability.cpp
+        rework-fhe-reliability/LinearRegressionModel.cpp
+        rework-fhe-reliability/LinearRegressionModel.h
 )
 

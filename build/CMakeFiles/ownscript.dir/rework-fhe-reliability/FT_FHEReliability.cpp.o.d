@@ -1,5 +1,5 @@
-CMakeFiles/ownscript.dir/main.cpp.o: \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/main.cpp \
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o: \
+  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FT_FHEReliability.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread.h \
@@ -223,64 +223,10 @@ CMakeFiles/ownscript.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/sciplot.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Canvas.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Figure.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Plot2D.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Constants.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Default.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Enums.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Palettes.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Plot.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/StringOrDouble.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Utils.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/AxisLabelSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TextSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/FontSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/Specs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/BorderSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/DepthSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/LineSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/DrawSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/ColumnIndex.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/FillSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/FilledCurvesSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/PointSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/FillStyleSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/GridSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/GridSpecsBase.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/ShowSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/HistogramStyleSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/LegendSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/FrameSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TitleSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/OffsetSpecsOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TicsSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TicsSpecsBaseOf.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TicsSpecsMajor.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/TicsSpecsMinor.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Plot3D.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/specs/LayoutSpecs.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src/sciplot/Vec.hpp \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
-  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric

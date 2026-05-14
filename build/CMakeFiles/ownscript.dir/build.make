@@ -86,84 +86,116 @@ CMakeFiles/ownscript.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/main.cpp -o CMakeFiles/ownscript.dir/main.cpp.s
 
-CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o: CMakeFiles/ownscript.dir/flags.make
-CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/BFVBenchmarker.cpp
-CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o -MF CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o.d -o CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/BFVBenchmarker.cpp
+CMakeFiles/ownscript.dir/lib/Utils.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/lib/Utils.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Utils.cpp
+CMakeFiles/ownscript.dir/lib/Utils.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ownscript.dir/lib/Utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/lib/Utils.cpp.o -MF CMakeFiles/ownscript.dir/lib/Utils.cpp.o.d -o CMakeFiles/ownscript.dir/lib/Utils.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Utils.cpp
 
-CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/BFVBenchmarker.cpp > CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.i
+CMakeFiles/ownscript.dir/lib/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/lib/Utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Utils.cpp > CMakeFiles/ownscript.dir/lib/Utils.cpp.i
 
-CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/BFVBenchmarker.cpp -o CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.s
+CMakeFiles/ownscript.dir/lib/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/lib/Utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Utils.cpp -o CMakeFiles/ownscript.dir/lib/Utils.cpp.s
 
-CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o: CMakeFiles/ownscript.dir/flags.make
-CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/CKKSBenchmarker.cpp
-CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o -MF CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o.d -o CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/CKKSBenchmarker.cpp
+CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/BFVBenchmarker.cpp
+CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o -MF CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o.d -o CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/BFVBenchmarker.cpp
 
-CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/CKKSBenchmarker.cpp > CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.i
+CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/BFVBenchmarker.cpp > CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.i
 
-CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/CKKSBenchmarker.cpp -o CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.s
+CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/BFVBenchmarker.cpp -o CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.s
 
-CMakeFiles/ownscript.dir/Utils.cpp.o: CMakeFiles/ownscript.dir/flags.make
-CMakeFiles/ownscript.dir/Utils.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/Utils.cpp
-CMakeFiles/ownscript.dir/Utils.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ownscript.dir/Utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/Utils.cpp.o -MF CMakeFiles/ownscript.dir/Utils.cpp.o.d -o CMakeFiles/ownscript.dir/Utils.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/Utils.cpp
+CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/CKKSBenchmarker.cpp
+CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o -MF CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o.d -o CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/CKKSBenchmarker.cpp
 
-CMakeFiles/ownscript.dir/Utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/Utils.cpp > CMakeFiles/ownscript.dir/Utils.cpp.i
+CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/CKKSBenchmarker.cpp > CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.i
 
-CMakeFiles/ownscript.dir/Utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/Utils.cpp -o CMakeFiles/ownscript.dir/Utils.cpp.s
+CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/benchmarker-testing/CKKSBenchmarker.cpp -o CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.s
 
-CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o: CMakeFiles/ownscript.dir/flags.make
-CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/FHEReliabilitySim.cpp
-CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o -MF CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o.d -o CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/FHEReliabilitySim.cpp
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.cpp
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o -MF CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o.d -o CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.cpp
 
-CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/FHEReliabilitySim.cpp > CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.i
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.cpp > CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.i
 
-CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/FHEReliabilitySim.cpp -o CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.s
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.cpp -o CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.s
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FT_FHEReliability.cpp
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o -MF CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o.d -o CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FT_FHEReliability.cpp
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FT_FHEReliability.cpp > CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.i
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FT_FHEReliability.cpp -o CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.s
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: CMakeFiles/ownscript.dir/flags.make
+CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.cpp
+CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: CMakeFiles/ownscript.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o -MF CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o.d -o CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o -c /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.cpp
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.cpp > CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.i
+
+CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.cpp -o CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.s
 
 # Object files for target ownscript
 ownscript_OBJECTS = \
 "CMakeFiles/ownscript.dir/main.cpp.o" \
-"CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o" \
-"CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o" \
-"CMakeFiles/ownscript.dir/Utils.cpp.o" \
-"CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o"
+"CMakeFiles/ownscript.dir/lib/Utils.cpp.o" \
+"CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o" \
+"CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o" \
+"CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o" \
+"CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o" \
+"CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o"
 
 # External object files for target ownscript
 ownscript_EXTERNAL_OBJECTS =
 
 ownscript: CMakeFiles/ownscript.dir/main.cpp.o
-ownscript: CMakeFiles/ownscript.dir/BFVBenchmarker.cpp.o
-ownscript: CMakeFiles/ownscript.dir/CKKSBenchmarker.cpp.o
-ownscript: CMakeFiles/ownscript.dir/Utils.cpp.o
-ownscript: CMakeFiles/ownscript.dir/FHEReliabilitySim.cpp.o
+ownscript: CMakeFiles/ownscript.dir/lib/Utils.cpp.o
+ownscript: CMakeFiles/ownscript.dir/benchmarker-testing/BFVBenchmarker.cpp.o
+ownscript: CMakeFiles/ownscript.dir/benchmarker-testing/CKKSBenchmarker.cpp.o
+ownscript: CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o
+ownscript: CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o
+ownscript: CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o
 ownscript: CMakeFiles/ownscript.dir/build.make
 ownscript: /usr/local/lib/libOPENFHEpke.1.5.1.dylib
 ownscript: /usr/local/lib/libOPENFHEbinfhe.1.5.1.dylib
 ownscript: /usr/local/lib/libOPENFHEcore.1.5.1.dylib
 ownscript: CMakeFiles/ownscript.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ownscript"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ownscript"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ownscript.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
