@@ -9,6 +9,8 @@ To run this project
 
 - [@taufikrendi](https://www.github.com/taufikrendi)
 
+## Information That You Must Know
+This is only for rebuild & self training about FHE..
 
 ## Documentation
 
@@ -45,5 +47,5 @@ if cannot run please re-create the build folder
 
 ## Acknowledgements
 
- - [Paper from Rian Raja Gede & Pro. Yan Solihin](https://arxiv.org/pdf/2509.20686)
+ - [Paper from Rian Raja Gede & Yan Solihin](https://arxiv.org/pdf/2509.20686)
 
