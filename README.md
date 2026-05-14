@@ -35,7 +35,7 @@ To deploy this project run
 if cannot run please re-create the build folder
 
 ```bash
-  rm -rf -I build
+  rm -rf build
   mkdir build
   cd build/
   cmake ..
