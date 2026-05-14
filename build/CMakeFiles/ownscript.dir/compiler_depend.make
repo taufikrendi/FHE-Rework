@@ -1435,6 +1435,8 @@ CMakeFiles/ownscript.dir/main.cpp.o: /Users/taufikrendi/Documents/distertasi/ope
   _deps/sciplot_content-src/sciplot/specs/TicsSpecsMajor.hpp \
   _deps/sciplot_content-src/sciplot/specs/TicsSpecsMinor.hpp \
   _deps/sciplot_content-src/sciplot/specs/TitleSpecsOf.hpp \
+  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Plotter.h \
+  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Plotter.h \
   /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.h \
   /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.h
 
@@ -1500,7 +1502,6 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o: /Users/tau
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
@@ -1943,6 +1944,7 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
@@ -1951,6 +1953,7 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdio \
@@ -1978,11 +1981,14 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
@@ -2000,6 +2006,8 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h \
@@ -2026,6 +2034,7 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/nl_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/pthread/pthread_impl.h \
@@ -2139,6 +2148,47 @@ CMakeFiles/ownscript.dir/rework-fhe-reliability/LinearRegressionModel.cpp.o: /Us
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include/stdint.h \
+  _deps/sciplot_content-src/sciplot/Canvas.hpp \
+  _deps/sciplot_content-src/sciplot/ColumnIndex.hpp \
+  _deps/sciplot_content-src/sciplot/Constants.hpp \
+  _deps/sciplot_content-src/sciplot/Default.hpp \
+  _deps/sciplot_content-src/sciplot/Enums.hpp \
+  _deps/sciplot_content-src/sciplot/Figure.hpp \
+  _deps/sciplot_content-src/sciplot/Palettes.hpp \
+  _deps/sciplot_content-src/sciplot/Plot.hpp \
+  _deps/sciplot_content-src/sciplot/Plot2D.hpp \
+  _deps/sciplot_content-src/sciplot/Plot3D.hpp \
+  _deps/sciplot_content-src/sciplot/StringOrDouble.hpp \
+  _deps/sciplot_content-src/sciplot/Utils.hpp \
+  _deps/sciplot_content-src/sciplot/Vec.hpp \
+  _deps/sciplot_content-src/sciplot/sciplot.hpp \
+  _deps/sciplot_content-src/sciplot/specs/AxisLabelSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/BorderSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/DepthSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/DrawSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/FillSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/FillStyleSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/FilledCurvesSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/FontSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/FrameSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/GridSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/GridSpecsBase.hpp \
+  _deps/sciplot_content-src/sciplot/specs/HistogramStyleSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/LayoutSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/LegendSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/LineSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/OffsetSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/PointSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/ShowSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/Specs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TextSpecsOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TicsSpecs.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TicsSpecsBaseOf.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TicsSpecsMajor.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TicsSpecsMinor.hpp \
+  _deps/sciplot_content-src/sciplot/specs/TitleSpecsOf.hpp \
+  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Plotter.h \
+  /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/FHEReliability.h \
   /Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/rework-fhe-reliability/LinearRegressionModel.h
 
 
@@ -2649,6 +2699,8 @@ _deps/sciplot_content-src/sciplot/specs/TicsSpecsMajor.hpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_addr_t.h:
 
 /usr/local/include/openfhe/core/utils/type_name.h:
+
+/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/lib/Plotter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h:
 

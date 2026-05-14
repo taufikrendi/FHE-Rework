@@ -18,6 +18,9 @@
 BUILD_STATIC:BOOL=OFF
 
 //Path to a program.
+CCACHE_PROGRAM:FILEPATH=CCACHE_PROGRAM-NOTFOUND
+
+//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
 //Path to a program.
@@ -157,6 +160,21 @@ CMAKE_PROJECT_NAME:STATIC=ownscript
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.3.1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=3
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -248,6 +266,15 @@ GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 //The directory containing a CMake configuration file for OpenFHE.
 OpenFHE_DIR:PATH=/usr/local/lib/OpenFHE
 
+//Build documentation
+SCIPLOT_BUILD_DOCS:BOOL=ON
+
+//Build examples
+SCIPLOT_BUILD_EXAMPLES:BOOL=ON
+
+//Build tests
+SCIPLOT_BUILD_TESTS:BOOL=ON
+
 //Value Computed by CMake
 ownscript_BINARY_DIR:STATIC=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build
 
@@ -256,6 +283,15 @@ ownscript_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 ownscript_SOURCE_DIR:STATIC=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript
+
+//Value Computed by CMake
+sciplot_BINARY_DIR:STATIC=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-build
+
+//Value Computed by CMake
+sciplot_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+sciplot_SOURCE_DIR:STATIC=/Users/taufikrendi/Documents/distertasi/openfhe-development/ownscript/build/_deps/sciplot_content-src
 
 
 ########################
