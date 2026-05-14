@@ -1,23 +1,16 @@
 #include "FHEReliability.h"
-#include <iostream>
+#include <cmath>
 
-FHEReliabilitySim::CiphertextComponent::CiphertextComponent(size_t N, size_t L)
-    : data(L, std::vector<uint64_t>(N, 100)) {}
+FHEReliability::FHEReliability(size_t ring_dim, double ckks_scale)
+    : N(ring_dim), scale(ckks_scale), gen(std::random_device{}()) {}
 
-FHEReliabilitySim::FHEReliabilitySim(size_t N, size_t L)
-    : ring_dim(N), rns_levels(L), c0(N, L), c1(N, L), gen(std::random_device{}()) {}
+double FHEReliability::calculateCKKSError(int bit_position) {
+    // E = 2^bit / (N * Scale)
+    return std::pow(2.0, bit_position) / (static_cast<double>(N) * scale);
+}
 
-void FHEReliabilitySim::injectRandomBitflip() {
-    int comp_idx = std::uniform_int_distribution<>(0, 1)(gen);
-    auto& target = (comp_idx == 0) ? c0 : c1;
-    size_t row = std::uniform_int_distribution<size_t>(0, rns_levels - 1)(gen);
-    size_t col = std::uniform_int_distribution<size_t>(0, ring_dim - 1)(gen);
-    int bit = std::uniform_int_distribution<>(0, 63)(gen);
-
-    target.data[row][col] ^= (1ULL << bit);
-
-    std::cout << "[Fault Injected] Comp: c" << comp_idx
-              << " | RNS Level: " << row
-              << " | Coeff Index: " << col
-              << " | Bit: " << bit << "\n";
+double FHEReliability::injectRandomBitflip() {
+    std::uniform_int_distribution<int> bit_dist(0, 63);
+    int bit = bit_dist(gen);
+    return calculateCKKSError(bit);
 }

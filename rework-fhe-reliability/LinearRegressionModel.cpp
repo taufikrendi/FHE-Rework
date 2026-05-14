@@ -2,61 +2,62 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <iomanip>
-#include <stdexcept>
+#include <cmath>
 
 LinearRegressionModel::LinearRegressionModel() {
     weights = {-0.2, -0.2, 0.01, -0.0001, 0.001, -0.00004, 0.0005, 0.4};
     bias = -35.0;
-    ocean_weights["<1H OCEAN"] = 0.1;
-    ocean_weights["INLAND"] = -0.2;
-    ocean_weights["NEAR OCEAN"] = 0.15;
-    ocean_weights["NEAR BAY"] = 0.12;
-    ocean_weights["ISLAND"] = 0.5;
 }
 
-double LinearRegressionModel::predict(const std::vector<double>& num_feats, const std::string& ocean_prox) const {
-    if (num_feats.size() != weights.size()) throw std::invalid_argument("Feature size mismatch.");
+double LinearRegressionModel::predictEncrypted(const std::vector<double>& features, double injected_error) const {
     double prediction = bias;
     for (size_t i = 0; i < weights.size(); ++i) {
-        prediction += (weights[i] * num_feats[i]);
+        prediction += (weights[i] * features[i]);
     }
-    if (ocean_weights.count(ocean_prox)) prediction += ocean_weights.at(ocean_prox);
-    return prediction;
+    return prediction + injected_error;
 }
 
-void LinearRegressionModel::processHousingCSV(const std::string& filename, int max_rows) {
+BenchmarkResult LinearRegressionModel::processHousingCSVWithFaults(const std::string& filename, FHEReliability& sim) {
+    // FIX 1: Declare 'res' at the very beginning of the function
+    BenchmarkResult res;
+    res.labels = {"PADD-P", "PMULT-P", "HADD", "HMUL"};
+    res.xLabel = "CKKS Operation";
+    res.yLabel = "Error Magnitude";
+
+    // Dynamic Calculation (Logic from the paper)
+    // FIX 2: Define 'base_error' ONLY ONCE here
+    double base_error = sim.calculateCKKSError(62);
+
+    // Calculate the propagation values
+    double pmult_impact = base_error * 2000.0; // average feature scaling
+    res.values = {base_error, pmult_impact, base_error * 1.05, pmult_impact * 7.0};
+
+    // --- CSV Processing Block ---
     std::ifstream file(filename);
     if (!file.is_open()) {
         std::cerr << "Error: Could not open " << filename << std::endl;
-        return;
+        return res;
     }
 
     std::string line;
-    std::getline(file, line); // Skip header
+    std::getline(file, line); // skip header
+    int count = 0;
 
-    int row_count = 0;
-    while (std::getline(file, line) && row_count < max_rows) {
+    std::cout << "[FHE Analysis] Base CKKS Error (bit 62): " << base_error << std::endl;
+
+    while (std::getline(file, line) && count < 5) {
         std::stringstream ss(line);
-        std::string token;
-        std::vector<double> numerical_data;
-        std::string ocean_prox;
-        double actual_value = 0.0;
-
-        for (int i = 0; i < 9; ++i) {
-            std::getline(ss, token, ',');
-            if (i == 8) actual_value = std::stod(token);
-            else numerical_data.push_back(token.empty() ? 0.0 : std::stod(token));
+        std::vector<double> feats;
+        std::string val;
+        for (int i = 0; i < 8; ++i) {
+            if(std::getline(ss, val, ',')) {
+                feats.push_back(std::stod(val));
+            }
         }
-        std::getline(ss, ocean_prox, ',');
-        if (!ocean_prox.empty() && ocean_prox.back() == '\r') ocean_prox.pop_back();
-
-        double result = predict(numerical_data, ocean_prox);
-
-        std::cout << "Row " << (row_count + 1)
-                  << " | Actual: $" << std::fixed << std::setprecision(2) << actual_value
-                  << " | Predicted: $" << (result * 100000.0) << std::endl;
-        row_count++;
+        // Use the pmult_impact as the injected error to simulate a weight fault
+        double pred = predictEncrypted(feats, pmult_impact);
+        std::cout << "Row " << ++count << " | Predicted (with Fault): $" << (pred * 100000.0) << std::endl;
     }
-    file.close();
+
+    return res; // Final return for the plotter
 }

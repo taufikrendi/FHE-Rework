@@ -69,10 +69,16 @@ if(NOT sciplot_content_POPULATED)
 endif()
 
 include_directories(${sciplot_content_SOURCE_DIR})
+# Copy housing.csv to the build directory automatically
 
-add_executable(ownscript main.cpp
+configure_file(data/housing.csv ${CMAKE_CURRENT_BINARY_DIR}/housing.csv COPYONLY)
+
+add_executable(ownscript
+        main.cpp
+
         ### Sciplot Lib Generator
         lib/Utils.cpp
+        lib/Plotter.h
 
         ### Testing
         benchmarker-testing/BFVBenchmarker.cpp

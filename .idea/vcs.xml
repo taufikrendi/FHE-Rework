@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/build/_deps/sciplot_content-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sciplot_content-src/deps/doxystrap" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sciplot_content-src/deps/gnuplot-palettes" vcs="Git" />
   </component>
 </project>

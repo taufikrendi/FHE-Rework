@@ -1,22 +1,19 @@
-#ifndef LINEAR_REGRESSION_MODEL_H
-#define LINEAR_REGRESSION_MODEL_H
-
+#pragma once
 #include <vector>
 #include <string>
-#include <map>
+#include "../lib/Plotter.h"
+#include "FHEReliability.h"
 
 class LinearRegressionModel {
 private:
     std::vector<double> weights;
     double bias;
-    std::map<std::string, double> ocean_weights;
 
 public:
     LinearRegressionModel();
-    double predict(const std::vector<double>& numerical_features, const std::string& ocean_proximity) const;
 
-    // Add this declaration so the compiler can find it
-    void processHousingCSV(const std::string& filename, int max_rows);
+    double predictEncrypted(const std::vector<double>& features, double injected_error) const;
+    BenchmarkResult processHousingCSVWithFaults(const std::string& filename, FHEReliability& sim);
+    // REVISED: Pass the FHE Simulator to calculate dynamic values
+    BenchmarkResult runReliabilityBenchmark(FHEReliability& sim);
 };
-
-#endif

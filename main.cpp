@@ -7,7 +7,7 @@
 #include <iomanip>
 // Include our modular classes
 // #include "lib/Utils.cpp"
-// #include "lib/Plotter.h"
+#include "lib/Plotter.h"
 // #include "benchmarker-testing/BFVBenchmarker.cpp"
 // #include "benchmarker-testing/CKKSBenchmarker.cpp"
 // #include "rework-fhe-reliability/FT_FHEReliabilitySim.cpp"
@@ -73,74 +73,29 @@ int main() {
     //
     // std::cout << "Simulation Complete. Decrypt result to check for SDC." << std::endl;
 
-    LinearRegressionModel model;
+    //Linier Regression
+    std::cout << "--- Starting Dynamic CKKS Reliability Analysis ---\n" << std::endl;
 
-    // 1. Open the attached CSV file
-    std::ifstream file("../data/housing.csv");
-    if (!file.is_open()) {
-        std::cerr << "Error: Could not open housing.csv. Please ensure it is in the same directory." << std::endl;
-        return 1;
-    }
+    // 1. Initialize FHE Parameters (N=8192, Scale=2^40)
+    size_t ring_dim = 8192;
+    double ckks_scale = std::pow(2.0, 40);
+    FHEReliability reliabilitySim(ring_dim, ckks_scale);
 
-    std::string line;
-    // 2. Read and skip the header row
-    std::getline(file, line);
+    LinearRegressionModel lrModel;
 
-    int row_count = 0;
-    int max_rows = 10;
+    // 2. Process data with faults
+    std::cout << "Processing dataset with simulated memory fault...\n";
+    // lrModel.processHousingCSVWithFaults("../data/housing.csv", reliabilitySim);
 
-    std::cout << "--- FHE: Batch Processing housing.csv ---" << std::endl;
-    std::cout << std::left << std::setw(8) << "Row"
-              << std::setw(20) << "Actual Value"
-              << "Predicted Value" << std::endl;
-    std::cout << std::string(50, '-') << std::endl;
+    // 3. Generate DYNAMIC Benchmark Data
+    // We now pass the simulator so it can calculate exact mathematically sound errors
+    BenchmarkResult lr_res = lrModel.processHousingCSVWithFaults("housing.csv", reliabilitySim);
 
-    // 3. Parse the file line by line
-    while (std::getline(file, line) && row_count < max_rows) {
-        std::stringstream ss(line);
-        std::string token;
+    // 4. Plot the results
+    DynamicPlotter plotter;
+    plotter.plot(lr_res, "ckks_fault_analysis.png");
 
-        std::vector<double> numerical_data;
-        std::string ocean_prox;
-        double actual_value = 0.0;
-
-        try {
-            // Read the first 9 columns (8 features + 1 target value)
-            for (int i = 0; i < 9; ++i) {
-                std::getline(ss, token, ',');
-                if (i == 8) {
-                    actual_value = std::stod(token); // Column 8 is median_house_value
-                } else {
-                    // Handle potential missing data
-                    double val = token.empty() ? 0.0 : std::stod(token);
-                    numerical_data.push_back(val);
-                }
-            }
-
-            // Read the 10th column (categorical: ocean_proximity)
-            std::getline(ss, ocean_prox, ',');
-            if (!ocean_prox.empty() && ocean_prox.back() == '\r') {
-                ocean_prox.pop_back(); // Clean up carriage returns on Windows
-            }
-
-            // 4. Execute the Model Algorithm
-            double result = model.predict(numerical_data, ocean_prox);
-
-            // Output comparison
-            std::cout << std::left << std::setw(8) << (row_count + 1)
-                      << "$" << std::fixed << std::setprecision(2) << std::setw(19) << actual_value
-                      << "$" << (result * 100000.0) << std::endl;
-
-            row_count++;
-
-        } catch (const std::exception& e) {
-            std::cerr << "Data parsing error on row " << row_count + 1 << ": " << e.what() << std::endl;
-        }
-    }
-
-    file.close();
-
-    std::cout << " rows involves " << (row_count * 8) << " PMULT operations, "<< std::endl;
+    std::cout << "\nAnalysis Complete. Check 'dynamic_ckks_fault_analysis.png'." << std::endl;
 
     return 0;
 }

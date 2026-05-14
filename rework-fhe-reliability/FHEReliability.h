@@ -1,28 +1,19 @@
-#ifndef FHE_RELIABILITY_SIM_H
-#define FHE_RELIABILITY_SIM_H
-
+#pragma once
 #include <vector>
 #include <random>
-#include <cstdint>
 
-class FHEReliabilitySim {
+class FHEReliability {
 private:
-    struct CiphertextComponent {
-        std::vector<std::vector<uint64_t>> data;
-        CiphertextComponent(size_t N, size_t L);
-    };
-
-    size_t ring_dim;
-    size_t rns_levels;
-    CiphertextComponent c0;
-    CiphertextComponent c1;
+    size_t N; // Ring Dimension (8192)
+    double scale; // CKKS Scaling Factor (2^40)
     std::mt19937 gen;
 
 public:
-    FHEReliabilitySim(size_t N, size_t L);
+    FHEReliability(size_t ring_dim, double ckks_scale);
 
-    // Make sure this name matches what you call in main.cpp exactly!
-    void injectRandomBitflip();
+    // Calculates the actual value deviation caused by a bitflip
+    double calculateCKKSError(int bit_position);
+
+    // Simulates a random fault injection and returns the error magnitude
+    double injectRandomBitflip();
 };
-
-#endif
