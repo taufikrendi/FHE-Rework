@@ -225,6 +225,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rework-fhe-reliability/FHECircuitDepthAnalyzer.o: rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.o
+
+# target to build an object file
+rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o
+
+rework-fhe-reliability/FHECircuitDepthAnalyzer.i: rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.i
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.i
+
+# target to preprocess a source file
+rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.i
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.i
+
+rework-fhe-reliability/FHECircuitDepthAnalyzer.s: rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.s
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.s
+
+# target to generate assembly for a file
+rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ownscript.dir/build.make CMakeFiles/ownscript.dir/rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.s
+.PHONY : rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.s
+
 rework-fhe-reliability/FHEReliability.o: rework-fhe-reliability/FHEReliability.cpp.o
 .PHONY : rework-fhe-reliability/FHEReliability.o
 
@@ -318,6 +342,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rework-fhe-reliability/FHECircuitDepthAnalyzer.o"
+	@echo "... rework-fhe-reliability/FHECircuitDepthAnalyzer.i"
+	@echo "... rework-fhe-reliability/FHECircuitDepthAnalyzer.s"
 	@echo "... rework-fhe-reliability/FHEReliability.o"
 	@echo "... rework-fhe-reliability/FHEReliability.i"
 	@echo "... rework-fhe-reliability/FHEReliability.s"

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ownscript.dir/lib/Utils.cpp.o.d"
   "CMakeFiles/ownscript.dir/main.cpp.o"
   "CMakeFiles/ownscript.dir/main.cpp.o.d"
+  "CMakeFiles/ownscript.dir/rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o"
+  "CMakeFiles/ownscript.dir/rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp.o.d"
   "CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o"
   "CMakeFiles/ownscript.dir/rework-fhe-reliability/FHEReliability.cpp.o.d"
   "CMakeFiles/ownscript.dir/rework-fhe-reliability/FT_FHEReliability.cpp.o"
