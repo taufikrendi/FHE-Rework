@@ -90,5 +90,7 @@ add_executable(ownscript
         rework-fhe-reliability/FT_FHEReliability.cpp
         rework-fhe-reliability/LinearRegressionModel.cpp
         rework-fhe-reliability/LinearRegressionModel.h
+        rework-fhe-reliability/FHECircuitDepthAnalyzer.cpp
+        rework-fhe-reliability/FHECircuitDepthAnalyzer.h
 )
 

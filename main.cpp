@@ -1,10 +1,11 @@
 #include <iostream>
 #include <sciplot/sciplot.hpp>
-#include <fstream>
-#include <sstream>
-#include <vector>
 #include <string>
 #include <iomanip>
+#include <cmath>
+// #include <fstream>
+// #include <sstream>
+// #include <vector>
 // Include our modular classes
 // #include "lib/Utils.cpp"
 #include "lib/Plotter.h"
@@ -14,6 +15,7 @@
 
 #include "rework-fhe-reliability/FHEReliability.h"
 #include "rework-fhe-reliability/LinearRegressionModel.h"
+#include "rework-fhe-reliability/FHECircuitDepthAnalyzer.h"
 
 using namespace sciplot;
 
@@ -76,26 +78,28 @@ int main() {
     //Linier Regression
     std::cout << "--- Starting Dynamic CKKS Reliability Analysis ---\n" << std::endl;
 
-    // 1. Initialize FHE Parameters (N=8192, Scale=2^40)
     size_t ring_dim = 8192;
     double ckks_scale = std::pow(2.0, 40);
     FHEReliability reliabilitySim(ring_dim, ckks_scale);
 
     LinearRegressionModel lrModel;
 
-    // 2. Process data with faults
     std::cout << "Processing dataset with simulated memory fault...\n";
-    // lrModel.processHousingCSVWithFaults("../data/housing.csv", reliabilitySim);
 
-    // 3. Generate DYNAMIC Benchmark Data
-    // We now pass the simulator so it can calculate exact mathematically sound errors
     BenchmarkResult lr_res = lrModel.processHousingCSVWithFaults("housing.csv", reliabilitySim);
 
-    // 4. Plot the results
     DynamicPlotter plotter;
-    plotter.plot(lr_res, "ckks_fault_analysis.png");
 
-    std::cout << "\nAnalysis Complete. Check 'dynamic_ckks_fault_analysis.png'." << std::endl;
+    FHECircuitDepthAnalyzer depthAnalyzer(10000, 0.5, 0.15);
 
+    std::cout << "\n--- Simulating Circuit Baseline (Low Depth) ---" << std::endl;
+    BenchmarkResult low_depth_res = depthAnalyzer.runBenchmarkAtDepth(reliabilitySim, 1);
+    plotter.plot(low_depth_res, "ckks_operations_depth_L1.png");
+
+    std::cout << "\n--- Simulating Deeper Circuit (High Depth Suppression) ---" << std::endl;
+    BenchmarkResult high_depth_res = depthAnalyzer.runBenchmarkAtDepth(reliabilitySim, 4);
+    plotter.plot(high_depth_res, "ckks_operations_depth_L4.png");
+
+    std::cout << "\n[Main] Rework completed. Generated multi-depth comparative charts!" << std::endl;
     return 0;
 }

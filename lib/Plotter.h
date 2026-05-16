@@ -25,7 +25,7 @@ public:
 
         // --- MANDATORY: SET SIZE BEFORE DRAWING ---
         // This ensures the internal coordinate system is mapped to 1080p
-        plot.size(1920, 1080);
+        plot.size(800, 600);
 
         plot.xlabel(res.xLabel);
         plot.ylabel(res.yLabel);
@@ -53,7 +53,7 @@ public:
         Canvas canvas = {{fig}};
 
         // Some versions of sciplot/gnuplot require size again at the canvas level
-        canvas.size(1920, 1080);
+        canvas.size(800, 600);
         canvas.save(outputFilename);
 
         std::cout << "[Plotter] SUCCESS: HD Analysis chart (1920x1080) saved to: " << outputFilename << std::endl;

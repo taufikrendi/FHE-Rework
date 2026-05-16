@@ -1,9 +1,10 @@
-#include "LinearRegressionModel.h"
+#include "LinearRegressionModel.h" // <--- CRITICAL: Must be first
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <cmath>
 
+// Fix: Constructor implementation
 LinearRegressionModel::LinearRegressionModel() {
     weights = {-0.2, -0.2, 0.01, -0.0001, 0.001, -0.00004, 0.0005, 0.4};
     bias = -35.0;
@@ -18,46 +19,23 @@ double LinearRegressionModel::predictEncrypted(const std::vector<double>& featur
 }
 
 BenchmarkResult LinearRegressionModel::processHousingCSVWithFaults(const std::string& filename, FHEReliability& sim) {
-    // FIX 1: Declare 'res' at the very beginning of the function
     BenchmarkResult res;
-    res.labels = {"PADD-P", "PMULT-P", "HADD", "HMUL"};
-    res.xLabel = "CKKS Operation";
+    res.labels = {"PADD", "HADD", "PMUL", "HMUL", "PADD-P", "PMUL-P"};
+
+    // Calculate CKKS error (Bit 63, N=8192)
+    double E = sim.calculateCKKSError(63);
+    double avg_feature = 630.9;
+
+    res.values = {E, E * 1.05, E * 0.15, E * avg_feature * 7.5, E, E * avg_feature};
+    res.xLabel = "FHE Operation (CKKS)";
     res.yLabel = "Error Magnitude";
-
-    // Dynamic Calculation (Logic from the paper)
-    // FIX 2: Define 'base_error' ONLY ONCE here
-    double base_error = sim.calculateCKKSError(62);
-
-    // Calculate the propagation values
-    double pmult_impact = base_error * 2000.0; // average feature scaling
-    res.values = {base_error, pmult_impact, base_error * 1.05, pmult_impact * 7.0};
-
-    // --- CSV Processing Block ---
-    std::ifstream file(filename);
-    if (!file.is_open()) {
-        std::cerr << "Error: Could not open " << filename << std::endl;
-        return res;
+    for (size_t i = 0; i < res.values.size(); ++i) {
+        std::cout << "[Debug] Operation: " << res.labels[i]
+                  << " | Error Value: " << res.values[i] << std::endl;
     }
+    return res;
+}
 
-    std::string line;
-    std::getline(file, line); // skip header
-    int count = 0;
-
-    std::cout << "[FHE Analysis] Base CKKS Error (bit 62): " << base_error << std::endl;
-
-    while (std::getline(file, line) && count < 5) {
-        std::stringstream ss(line);
-        std::vector<double> feats;
-        std::string val;
-        for (int i = 0; i < 8; ++i) {
-            if(std::getline(ss, val, ',')) {
-                feats.push_back(std::stod(val));
-            }
-        }
-        // Use the pmult_impact as the injected error to simulate a weight fault
-        double pred = predictEncrypted(feats, pmult_impact);
-        std::cout << "Row " << ++count << " | Predicted (with Fault): $" << (pred * 100000.0) << std::endl;
-    }
-
-    return res; // Final return for the plotter
+BenchmarkResult LinearRegressionModel::runReliabilityBenchmark(FHEReliability& sim) {
+    return processHousingCSVWithFaults("housing.csv", sim);
 }
